@@ -27,3 +27,11 @@
 **Running migrations**
 ---
 `$ npm run migration:run`
+
+**What need to do**
+---
+
+* ElasticSearch and Kibana
+* Docker
+* Sentry
+* Actions
