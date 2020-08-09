@@ -1,5 +1,5 @@
 {
-  "name": "school_care_api",
+  "name": "boilerplate-api-node-typescript",
   "version": "1.0.0",
   "main": "build/server.js",
   "type": "module",
