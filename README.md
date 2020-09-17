@@ -7,7 +7,7 @@
 - [ ] Kibana
 - [ ] Docker
 - [x] Sentry 
-- [ ] Actions
+- [x] Actions
 
 **Installation**
 ---
