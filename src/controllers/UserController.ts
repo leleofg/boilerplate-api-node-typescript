@@ -40,12 +40,6 @@ export async function createUser(req: Request, res: Response) {
 
     const userRepository = getCustomRepository(UserRepository);
 
-    const checkEmailExists = await userRepository.findOne({ where: { email: createUser.email } });
-
-    if (checkEmailExists === undefined) {
-      throw new Error("Email já cadastrado");
-    }
-
     const { id } = await userRepository.createAndSave(createUser);
 
     return res.status(201).json({ id });

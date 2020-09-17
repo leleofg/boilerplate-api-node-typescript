@@ -2,7 +2,6 @@
   "name": "boilerplate-api-node-typescript",
   "version": "1.0.0",
   "main": "build/server.js",
-  "type": "module",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon -r dotenv/config -e ts src/server.ts",

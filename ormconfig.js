@@ -6,11 +6,11 @@ module.exports = {
   database: DATABASE,
   host: DATABASE_HOST,
   password: DATABASE_PASSWORD,
-  port: DATABASE_PORT,
+  port: 5432,
   username: DATABASE_USER,
   logging: true,
   cli: {
-    migrationsDir: "src/migrations"
+    migrationsDir: "src/migrations",
   },
   entities: ["src/models/*.{js,ts}"],
   migrations: ["src/migrations/*.{js,ts}"],

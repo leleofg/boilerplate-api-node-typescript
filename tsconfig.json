@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
-      "lib": ["es2019"],
-      "target": "es2018",
+      "lib": ["es2020"],
+      "target": "es2019",
       "module": "commonjs",
       "sourceMap": true,
       "inlineSources": true,
@@ -14,9 +14,9 @@
       "emitDecoratorMetadata": true,
       "skipLibCheck": true
     },
-    "lib": ["es2019"],
     "include": [
-      "src/**/*"
+      "src/**/*",
+      "test/**/*"
     ],
     "exclude": [
       "node_modules"
