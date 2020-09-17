@@ -4,8 +4,8 @@
   "main": "build/server.js",
   "license": "MIT",
   "scripts": {
-    "dev": "tsnd --respawn --transpile-only --no-notify src/server.ts ",
-    "start": "tsc && node build/src/server.js",
+    "dev": "NODE_ENV=dev tsnd --respawn --transpile-only --no-notify src/server.ts ",
+    "start": "tsc && NODE_ENV=production node build/src/server.js",
     "build": "tsc",
     "type-check": "tsc -noEmit",
     "lint": "eslint --config .eslintrc.json {src,tests}/**/*.ts",
