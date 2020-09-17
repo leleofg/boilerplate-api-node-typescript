@@ -3,12 +3,12 @@ import { validate } from "../middlewares/auth";
 
 const routesUser = Router();
 
-import UserController from "../controllers/UserController";
+import { createUser, deleteUser, editUser, getUserById, getUsers } from "../controllers/UserController";
 
-routesUser.post("/users", UserController.createUser);
-routesUser.get("/users", validate, UserController.getUsers);
-routesUser.get("/users/:id", validate, UserController.getUserById);
-routesUser.put("/users/:id", validate, UserController.editUser);
-routesUser.delete("/users/:id", validate, UserController.deleteUser);
+routesUser.post("/users", createUser);
+routesUser.get("/users", validate, getUsers);
+routesUser.get("/users/:id", validate, getUserById);
+routesUser.put("/users/:id", validate, editUser);
+routesUser.delete("/users/:id", validate, deleteUser);
 
 export default routesUser;
