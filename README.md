@@ -1,5 +1,10 @@
 ## Boilerplate API with Node.js, Typescript, Typeorm, Postgres and tests
 
+**Configuration**
+
+* Create .env file based on .env.example
+* Configure Postgres in your machine to run the tests
+
 **What need to do**
 ---
 
