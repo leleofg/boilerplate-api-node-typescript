@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: npm audit
+
+    - name: Check lint
+      run: npm run lint
+
+    - name: Prettier
+      run: npm run prettier
+
+    - name: Type Check
+      run: npm run type-check
