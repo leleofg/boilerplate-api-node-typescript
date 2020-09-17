@@ -42,7 +42,7 @@ export async function createUser(req: Request, res: Response) {
 
     const checkEmailExists = await userRepository.findOne({ where: { email: createUser.email } });
 
-    if (checkEmailExists) {
+    if (checkEmailExists === undefined) {
       throw new Error("Email já cadastrado");
     }
 

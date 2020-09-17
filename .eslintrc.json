@@ -91,7 +91,7 @@
     "no-script-url": "error",
     "no-self-compare": "error",
     "no-sequences": "error",
-    "no-shadow": "error",
+    "no-shadow": "off",
     "no-sync": ["error", { "allowAtRootLevel": true }],
     "no-template-curly-in-string": "error",
     "no-throw-literal": "error",
