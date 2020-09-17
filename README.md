@@ -1,5 +1,14 @@
 ## Boilerplate API with Node.js, Typescript, Typeorm, Postgres and tests
 
+**What need to do**
+---
+
+- [ ] ElasticSearch
+- [ ] Kibana
+- [ ] Docker
+- [x] Sentry 
+- [ ] Actions
+
 **Installation**
 ---
 `$ npm install`
@@ -27,11 +36,3 @@
 **Running migrations**
 ---
 `$ npm run migration:run`
-
-**What need to do**
----
-
-* ElasticSearch and Kibana
-* Docker
-* Sentry
-* Actions
