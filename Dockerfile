@@ -1,18 +1,13 @@
-FROM node:12
+FROM node:14-alpine
 
-WORKDIR /usr/app
-
-COPY package*.json ./
-
-RUN npm ci
+WORKDIR /app
 
 COPY . .
 
+RUN npm ci
+
 RUN npm run build
 
-COPY ormconfig.js ./build/
-COPY .env ./build/
-WORKDIR ./build
-
 EXPOSE 4000
-CMD node src/server.js
+
+CMD npm run start

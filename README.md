@@ -5,7 +5,7 @@
 
 - [ ] ElasticSearch
 - [ ] Kibana
-- [ ] Docker
+- [x] Docker
 - [x] Sentry 
 - [x] Actions
 
