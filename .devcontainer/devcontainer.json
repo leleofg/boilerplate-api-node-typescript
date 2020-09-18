@@ -1,0 +1,29 @@
+{
+  "name": "Boilerplate Nodejs and TypeORM",
+  "dockerComposeFile": "docker-compose.yml",
+  // "dockerFile": "Dockerfile",
+  "service": "api",
+  "workspaceFolder": "/workspace",
+
+  // Use 'settings' to set *default* container specific settings.json values on container create.
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/zsh"
+  },
+
+  // Use 'containerEnv' to set Environments Variables in container enviroment on container create.
+  "containerEnv": {
+    "PORT": 3333
+  },
+
+  // Add the IDs of extensions you want installed when the container is created in the array below.
+  "extensions": ["dbaeumer.vscode-eslint"],
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [3333],
+
+  // Specifies a command that should be run after the container has been created.
+  "postCreateCommand": "yarn install",
+
+  // Comment out the next line to run as root instead.
+  "remoteUser": "node"
+}

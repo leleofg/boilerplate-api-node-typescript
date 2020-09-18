@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VARIANT: 12
+    volumes:
+      - ..:/workspace:cached
+    command: sleep infinity
+    links:
+      - db
+
+  db:
+    image: postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: postgres 
+      POSTGRES_DB: api
+    ports:
+      - "5432:5432"
+    volumes:
+      - /var/lib/postgresql/data
+  
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin@example.com
+      PGADMIN_DEFAULT_PASSWORD: pgadmin
+    ports:
+      - "8000:80"
+    links:
+      - db
+    depends_on:
+      - db
+    
