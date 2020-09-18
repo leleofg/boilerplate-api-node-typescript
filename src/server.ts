@@ -8,7 +8,7 @@ const server = createServer(app);
 
 config({ path: resolve(__dirname, "../.env") });
 
-const PORT = process.env.PORT || 9999;
+const PORT = process.env.PORT || 3333;
 
 getConnectionOptions()
   .then(async options => {
