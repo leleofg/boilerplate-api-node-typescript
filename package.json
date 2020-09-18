@@ -4,7 +4,7 @@
   "main": "build/server.js",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=dev tsnd --respawn --transpile-only --no-notify src/server.ts ",
+    "dev": "NODE_ENV=dev tsnd --inspect --respawn --transpile-only --no-notify src/server.ts ",
     "start": "tsc && NODE_ENV=production node build/src/server.js",
     "build": "tsc",
     "type-check": "tsc -noEmit",
