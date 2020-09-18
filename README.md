@@ -1,4 +1,4 @@
-## Boilerplate API with Node.js, Typescript, Typeorm, Postgres and tests
+## Boilerplate API with Node.js, Typescript, Typeorm, Postgres and tests running on Docker
 
 **Configuration**
 
@@ -10,13 +10,15 @@
 
 - [ ] ElasticSearch
 - [ ] Kibana
-- [x] Docker
+- [x] ~~Docker~~
 - [x] Sentry 
 - [x] Actions
 
 **Installation**
 ---
-`$ npm install`
+`Opening in VSCODE Editor and click in reopen in Container`
+
+> for use it requires the [devcontainer](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) plugin and [Docker](https://docker.com/) to be installed.
 
 **Running app in dev**
 ---
