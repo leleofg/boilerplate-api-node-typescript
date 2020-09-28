@@ -1,9 +1,5 @@
 ## Boilerplate API with Node.js, Typescript, Typeorm, Postgres and tests running on Docker
 
-**Configuration**
-
-* Create .env file based on .env.example
-
 **What need to do**
 ---
 
@@ -12,6 +8,11 @@
 - [x] ~~Docker~~
 - [x] ~~Sentry~~ 
 - [x] ~~Actions~~
+
+**Configuration**
+---
+
+* Create .env file based on .env.example
 
 **Installation**
 ---
