@@ -10,8 +10,8 @@
 - [ ] ElasticSearch
 - [ ] Kibana
 - [x] ~~Docker~~
-- [x] Sentry 
-- [x] Actions
+- [x] ~~Sentry~~ 
+- [x] ~~Actions~~
 
 **Installation**
 ---
