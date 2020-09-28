@@ -1,5 +1,5 @@
 node_modules
 .env
 test/coverage
-.vscode/
 build/
+yarn.lock

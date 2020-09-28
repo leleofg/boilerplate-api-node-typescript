@@ -2,6 +2,7 @@ import express, { json, urlencoded } from "express";
 import cors from "cors";
 import routes from "./routes";
 import morgan from "morgan";
+import { ignoreFavicon } from "./middlewares/ignoreFavicon";
 
 export interface Token {
   userId: string;
@@ -31,6 +32,7 @@ class App {
     this.express.use(urlencoded({ extended: true }));
     this.express.use(morgan("dev"));
     this.express.use(cors());
+    this.express.use(ignoreFavicon);
   }
 
   private routes(): void {

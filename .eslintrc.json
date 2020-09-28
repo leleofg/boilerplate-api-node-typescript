@@ -47,7 +47,7 @@
 
     "array-callback-return": "error",
     "block-scoped-var": "error",
-    "consistent-return": "error",
+    "consistent-return": ["error", { "treatUndefinedAsUnspecified": true }],
     "curly": "error",
     "default-case": "error",
     "default-param-last": "error",
